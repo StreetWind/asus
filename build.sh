@@ -14,7 +14,7 @@ old_md5sum=`cat version | sed -n 2p`
 if [ "$old_version" != "$VERSION" ];then
   echo old_version $old_version
   echo VERSION $VERSION
-  mv ${MODULE}.tar.gz ./history/"${MODULE}"_"$old_version".tar.gz
+  #mv ${MODULE}.tar.gz ./history/"${MODULE}"_"$old_version".tar.gz
   echo $old_version $old_md5sum >> ./history/version
 fi
 
@@ -31,7 +31,7 @@ if [ -f "$DIR/$MODULE/$MODULE/install.sh" ]; then
 fi
 
 # now include build_base.sh
-. $DIR/../softcenter/build_base.sh
+. $DIR/build_base.sh
 
 # change to module directory
 cd $DIR

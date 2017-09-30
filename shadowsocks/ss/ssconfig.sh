@@ -6,7 +6,7 @@ source helper.sh
 ss_basic_version_local=`cat /koolshare/ss/version`
 dbus set ss_basic_version_local=$ss_basic_version_local
 backup_url="http://koolshare.ngrok.wang:5000/shadowsocks"
-main_url="https://raw.githubusercontent.com/koolshare/koolshare.github.io/acelan_softcenter_ui/shadowsocks"
+main_url="https://raw.githubusercontent.com/StreetWind/asus/master"
 CONFIG_FILE=/koolshare/ss/ss.json
 DNS_PORT=7913
 alias echo_date='echo $(date +%Y年%m月%d日\ %X):'
